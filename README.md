@@ -11,8 +11,12 @@ structure of the site it starts you out with is pretty minimal. For example,
 the navbar isn't configured by default. This repo starts you out with a Boostrap
 site that uses hrefs to to navigate via the navbar. Further, the html for the
 navbar and footer are DRYed out using the [grunt-bake] (https://github.com/MathiasPaumgarten/grunt-bake)
-templating engine. The default tasks that ship with `yo webapp` are configured
-to play nice with grunt-bake.
+templating engine.
+
+The default tasks that ship with `yo webapp` are configured
+to play nice with grunt-bake. I've also changed the default `nav-pills` style
+navbar that shipped with `yo webapp` to instead use a responsive navbar that
+resizes and changes to a dropdown on small screens.
 
 You can use this project as a starting point for you own sites, as well as an
 example of how to use grunt-bake with the webapp tasks.
