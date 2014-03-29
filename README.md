@@ -15,11 +15,21 @@ templating engine.
 
 The default tasks that ship with `yo webapp` are configured
 to play nice with grunt-bake. I've also changed the default `nav-pills` style
-navbar that shipped with `yo webapp` to instead use a responsive navbar that
+navbar that ships with `yo webapp` to instead use a responsive navbar that
 resizes and changes to a dropdown on small screens.
 
 You can use this project as a starting point for you own sites, as well as an
 example of how to use grunt-bake with the webapp tasks.
+
+### On a Desktop:
+<p align="center">
+  <img alt="On a desktop." src="./screenCap_desktop.png">
+</p>
+
+### On Mobile, with Navbar Resized
+<p align="center">
+  <img alt="On a mobile, with navbar resized." src="./screenCap_mobile.png">
+</p>
 
 ## Getting Started
 
