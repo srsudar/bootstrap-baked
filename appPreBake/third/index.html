@@ -1,0 +1,56 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Third</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!--(bake ../includes/doCss.html)-->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="header">
+                <!--(bake ../includes/navbar.html)-->
+                <script type="text/javascript">
+                    // We're not using jquery because jquery isn't loaded yet.
+                    document.getElementById('navbar-third').setAttribute('class', 'active');
+                </script>
+                <h3 class="text-muted">Third</h3>
+            </div>
+
+            <div class="row marketing">
+                <div>
+                    <h1>Third</h1>
+                    <p>Here is the third page. You can also see how to use hash
+                    navigation here.</p>
+                </div>
+            </div>
+
+            <div class="page-header">
+              <h2><a name="section-one" href="#section-one">#</a> Section One</h2>
+            </div>
+            <div>
+                <p class="lead">Click on the # sign and watch how the URL
+                appends the hash and scrolls to this heading. It does this
+                because the anchor element has the matching "name" attribute
+                set. Take a look at the source to see how.</p>
+            </div>
+
+            <!--(bake ../includes/footer.html)-->
+
+        </div>
+
+        <!--(bake ../includes/doScripts.html)-->
+
+</body>
+</html>
