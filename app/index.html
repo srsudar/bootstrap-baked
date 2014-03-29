@@ -26,20 +26,34 @@
 
 
         <div class="container">
-            <div class="header">
+            <div>
                 <!-- This is the navbar present across all pages. Should be included using
                 grunt-bake or another templating engine. -->
-                <ul class="nav nav-pills pull-right">
-                    <li id='navbar-about'><a href="/">About</a></li>
-                    <li id='navbar-first'><a href="/first">First</a></li>
-                    <li id='navbar-second'><a href="/second">Second</a></li>
-                    <li id='navbar-third'><a href="/third">Third</a></li>
-                </ul>
+                <div class="navbar navbar-default" role="navigation">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="/">Bootstrap-Baked</a>
+                    </div>
+                    <nav class="collapse navbar-collapse" role="navigation">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li id='navbar-about'><a href="/">About</a></li>
+                          <li id='navbar-first'><a href="/first">First</a></li>
+                          <li id='navbar-second'><a href="/second">Second</a></li>
+                          <li id='navbar-third'><a href="/third">Third</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
                 
                 <script type="text/javascript">
                    document.getElementById('navbar-about').setAttribute('class', 'active'); 
                 </script>
-                <h3 class="text-muted">About</h3>
             </div>
 
             <div class="jumbotron">
