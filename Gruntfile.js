@@ -224,6 +224,17 @@ module.exports = function (grunt) {
 
         // The following *-min tasks produce minified files in the dist folder
         imagemin: {
+            // There are several issues with this task in version 0.5.x. If you
+            // are encountering problems where it hangs, claims to not find
+            // files, or progresses on subsequent runs but emitting images of
+            // size 0, uncomment this options object. It will stop caching and
+            // this should fix the problem, although it will take longer.
+            // For a more thorough discussion, see the following links:
+            // https://github.com/gruntjs/grunt-contrib-imagemin/issues/140
+            // http://stackoverflow.com/questions/21175673/grunt-contrib-imagemin-output-fatal-error-enoent-no-such-file-or-directory
+            //options: {
+            //    cache: false
+            //},
             dist: {
                 files: [{
                     expand: true,
