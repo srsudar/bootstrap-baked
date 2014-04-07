@@ -308,6 +308,15 @@ module.exports = function (grunt) {
                         'styles/fonts/{,*/}*.*',
                         'bower_components/bootstrap/dist/fonts/*.*'
                     ]
+                }, {
+                    // Have to manually add this copying to ensure that the
+                    // glyphicons make it over.
+                    // This solution comes from this stack overflow:
+                    // http://stackoverflow.com/questions/18572941/why-does-yeoman-build-without-glyphicons
+                    expand: true,
+                    cwd: '<%= config.app %>/bower_components/bootstrap/dist/fonts',
+                    dest: '<%= config.dist %>/fonts',
+                    src: '*.*'
                 }]
             },
             styles: {
