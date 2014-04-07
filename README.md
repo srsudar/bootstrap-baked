@@ -13,13 +13,15 @@ site that uses hrefs to to navigate via the navbar. Further, the html for the
 navbar and footer are DRYed out using the [grunt-bake] (https://github.com/MathiasPaumgarten/grunt-bake)
 templating engine.
 
-The default tasks that ship with `yo webapp` are configured
+The default tasks that ship with `yo webapp` have been reconfigured
 to play nice with grunt-bake. I've also changed the default `nav-pills` style
 navbar that ships with `yo webapp` to instead use a responsive navbar that
-resizes and changes to a dropdown on small screens.
+resizes and changes to a dropdown on small screens. A couple small bugs with
+yo webapp 1.1.2 have also been fixed.
 
 You can use this project as a starting point for you own sites, as well as an
 example of how to use grunt-bake with the webapp tasks.
+
 
 ### On a Desktop:
 <p align="center">
@@ -88,6 +90,18 @@ by using grunt-bake. The
 code for the navbar is defined in `appPreBake/includes/navbar.html`, and it is
 added to other the final `.html` files using templates. That way when you want
 to make a change you only have to change it in one place.
+
+### Bug Fixes
+
+Yo webapp 1.1.2 has two issues I've encountered. The first is that glyphicons
+aren't correctly copied to the `dist` folder in the default installation, but
+they are here. Take a look in the Gruntfile for details.
+
+The second is that the imagemin task sometimes hangs, fails, or produces images
+of size zero. A fix for this is to not cache the images. This is not enabled by
+default, since caching is usually good. If you encounter any of these problems,
+try following the instructions to fix it near the imagemin task in the
+Gruntfile.
 
 ## How it Works
 
